@@ -50,4 +50,6 @@ app.get("/read",function (req,res){
     
 })
 
-app.listen(3010)
+app.listen(process.env.PORT||3010,()=>{
+    console.log("App listening at port-3010 ");
+})
